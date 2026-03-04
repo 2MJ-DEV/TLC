@@ -130,7 +130,7 @@ const links = [
 
 export default function FooterSection() {
   return (
-    <footer className="border-b bg-white pt-20 dark:bg-transparent">
+    <footer className="border-b border-t border-dashed bg-white pt-10 dark:bg-transparent">
       <div className="mx-auto max-w-5xl px-6">
         <div className="grid gap-12 md:grid-cols-5">
           <div className="md:col-span-2">
@@ -141,7 +141,7 @@ export default function FooterSection() {
 
           <div className="grid grid-cols-2 gap-6 sm:grid-cols-4 md:col-span-3">
             {links.map((link, index) => (
-              <div key={index} className="space-y-4 text-sm">
+              <div key={index} className="space-y-4 text-xs">
                 <span className="block font-medium">{link.group}</span>
                 {link.items.map((item, index) => (
                   <Link

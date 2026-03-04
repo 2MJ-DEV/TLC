@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 // import Image from "next/image";
@@ -27,7 +26,7 @@ export default function HeroSection() {
                 </p>
 
                 <div className="mt-12 flex flex-col items-center justify-center gap-2 sm:flex-row lg:justify-start">
-                  <Button asChild size="lg" className="px-5 text-base">
+                  <Button asChild size={'sm'} className="px-5">
                     <Link href="#link">
                       <Github />
                       <span className="text-nowrap">Découvrir TL</span>
@@ -36,9 +35,9 @@ export default function HeroSection() {
                   <Button
                     key={2}
                     asChild
-                    size="lg"
+                    size={'sm'}
                     variant={"outline"}
-                    className="px-5 text-base"
+                    className="px-5"
                   >
                     <Link href="#link">
                       <Slack />
